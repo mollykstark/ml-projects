@@ -1,0 +1,11 @@
+import pandas as pd
+
+sales = pd.read_csv('home_data.csv') 
+sales.head()
+
+num_rows = len(sales)
+
+y = sales['price']
+
+num_cols = sales.columns
+num_inputs = len(num_cols) - 1
